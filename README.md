@@ -1,6 +1,8 @@
 
 ## How to using corona project ingest data from S3 to Elasticsearch.
-
+### Goal: ###
+A csv row data file is stored in S3, using a batch ingest data into Elasticsearch, and then visualize by Kibana tool.<br>
+![Project goal](https://github.com/pkm0306pkm/corona/blob/master/images/goal.png)
 ### Step 1. Create new AWS EC2 <br/>
 ### Step 2. Install OpenCOBOL, git, cron on EC2<br/>
 ### Step 3. Get source from git <br/>
@@ -48,3 +50,5 @@ Cron will execute schedule (JOB: batch.sh) in every 5 minutes <br/>
 AWS CLI: copy file s3_datarow.csv to EC2 <br/>
 COBOL: convert to Elasticsearch json format <br/>
 REST API: index json data to Elasticsearch service <br/>
+
+### Step 10. Usign Kibana visualize data. <br/>
